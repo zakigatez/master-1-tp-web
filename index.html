@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./style/app.css">
+</head>
+<body>
+
+	<form class="fiche">
+
+
+		
+		<h1 class="header"> Add a ensiegnent</h1>
+	   <div class="card part-1 part-2">
+		 <fieldset class="presonelInformation">
+		    <legend>Personal information:</legend>
+			    <div class="field">
+				    <label for="firstName">First Name :</label><br>
+				    <input class="input" type="text" name="firstName" placeholder="First Name"required>
+				</div><br>
+
+
+				<div class="field">
+				    <label for="lastName">Last Name :</label><br>
+				    <input class="input" type="text" name="lastName"placeholder="Last Name"required>
+				</div><br>
+
+
+
+				<div class="field">
+				    <label for="birthday">Birthday :</label><br>
+				    <input class="input" type="date" name="birthday"placeholder="Birthday"required>		
+				</div><br>
+
+
+				<div class="field">
+				    <label for="email">Email :</label><br>
+				    <input class="input" type="email" name="email"placeholder="Email"required>
+				</div>	<br>
+
+
+
+				<div class="field">
+				    <label for="emailConfirmation">Email confirmation :</label><br>
+				    <input class="input" type="email" name="emailConfirmation"placeholder="Email confirmation"required>		
+				</div>	<br>
+
+
+
+				<div class="field">
+				    <label for="address">Address :</label><br>
+				    <textarea class="input" name="address" rows="3" placeholder="Address"required></textarea>		
+				</div>	<br>
+
+			    
+
+				<div class="field">
+				    <label for="gender">Gender :</label><br>
+				   	<input type="radio" name="gender" value="man"required>man
+				   	<input type="radio" name="gender" value="wonman"required>wonman	
+				</div>	<br>
+
+
+				<div class="field">
+				    <label for="grade">Grade :</label><br>
+				    <select name="grade" class="input" size="4" required>
+				      <option value="" disabled="true">- - - - -</option>	
+					  <option value="assistent">assistent</option>
+					  <option value="cherger cours">cherger cours</option>
+					  <option value="MCA">MCA</option>
+					  <option value="MCB">MCB</option>
+					</select>
+				</div><br>
+
+
+
+				<div class="field">
+				    <label for="dernierDiplome">dernier diplome :</label><br>
+				    <input list="diplome" class="input" type="text" name="dernierDiplome" placeholder="dernier diplome "required>		
+				</div>	<br>
+
+				  <datalist id="diplome">
+				    <option value="isil">
+				    <option value="acad">
+				    <option value="gtr">
+				    <option value="ro">
+				    <option value="il">
+				    <option value="miv">
+				    <option value="rsd">
+				    <option value="sii">
+				    <option value="mind">
+				    <option value="ssi">
+				  </datalist>
+			  </fieldset>
+			</div>		
+
+		  <!-- enseingements et recherches-->
+		<div class="card part-1 part-2">
+		  <fieldset class=" enseingmenetsEtRecherches">
+		  	
+		  	<legend> Enseingements et recherches </legend>
+		  	
+		  	
+			  	<div class="field">
+			  		 <button type="button" class="btn-show btn">+</button>  <label for="modulesTheorique">Modules Theorique</label> <br>
+			  		 <div class="field-content">
+			  				<input type="checkbox" name="modulesTheorique" value="theorie de graphe"required>theorie de graphe <br>
+			   				<input type="checkbox" name="modulesTheorique" value="theorie de langage"required>theorie de langage <br>
+			   				<input type="checkbox" name="modulesTheorique" value="logique mathematiques"required>logique mathematiques <br>
+			  		 </div>
+			  	</div> <br>
+
+
+
+			  	<div class="field">
+			  		<button type="button" class="btn-show btn">+</button>
+			  		<label for="modulesDeProgramation">  Modules de programmation</label> <br>
+			  		<div class="field-content">
+				  		<input type="checkbox" name="modulesDeProgramation" value="algorithme"required>algorithme <br>
+				   		<input type="checkbox" name="modulesDeProgramation" value="programmation object"required>programmation object <br>
+				   		<input type="checkbox" name="modulesDeProgramation" value="programmation web"required>programmation web <br>
+						<input type="checkbox" name="modulesDeProgramation" value="programmation foncionnelle"required>programmation foncionnelle <br>
+				   		<input type="checkbox" name="modulesDeProgramation" value="assembleur"required>assembleur <br>
+			  		</div>
+		   		</div> <br>
+
+
+
+			  	<div class="field">
+					<button type="button" class="btn-show btn">+</button> 
+			  		<label for="moduleDeConceptionEtAnalyse"> Module De Conception Et d'Analyse</label> <br>
+			   		<div class="field-content">
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="genie logiciel"required>genie logiciel <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="base de donnees"required>base de donnees <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="base de donnees avance"required>base de donnees avance <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="UML"required>UML <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="UML avance"required>UML avance <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="intellegence artificiel"required>intellegence artificiel <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="big data"required>big data <br>
+				   		<input type="checkbox" name="moduleDeConceptionEtAnalyse" value="cloud computing"required>cloud computing <br>
+			   		</div>
+			  	</div> <br>
+
+
+			  	<div class="field">
+			  		<button type="button" class="btn-show btn">+</button>
+			  		<label for="autreModules"> Autre modules</label> <br>
+			   		<div class="field-content">
+					   		<input type="checkbox" name="autreModules" value="architecture des ordinatuers 1"required>architecture des ordinatuers 1 <br>
+					   		<input type="checkbox" name="autreModules" value="architecture des ordinatuers 2"required>architecture des ordinatuers 2 <br>
+					   		<input type="checkbox" name="autreModules" value="system  d'exploitation"required>system  d'exploitation <br>
+					   		<input type="checkbox" name="autreModules" value="system  d'exploitation avance"required>system  d'exploitation avance <br>
+					   		<input type="checkbox" name="autreModules" value="reseau"required>reseau <br>
+					   		<input type="checkbox" name="autreModules" value="reseau avance"required>reseau avance <br>
+					   		<input type="checkbox" name="autreModules" value="securite"required>securite <br>
+					   		<input type="checkbox" name="autreModules" value="securite avance"required>securite avance <br>
+			   		</div>
+		 	
+			  	</div> <br>
+				
+				<div>
+				  	<button type="submit" class="btn btn-success">submit</button>
+				  	<button type="reset" class="btn btn-cancel">cancel</button>
+			  	</div>
+			  	
+			 </fieldset>
+		</div>
+
+	</form>	<br>
+
+</body>
+</html>
